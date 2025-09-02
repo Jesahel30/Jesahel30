@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Deluxe Imports</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --negro: #0f0f0f;
+      --gris: #2f2f2f;
+      --dorado: #d4af37;
+      --tipografia: 'Poppins', sans-serif;
+    }
+
+    body {
+      margin: 0;
+      font-family: var(--tipografia);
+      background-color: var(--negro);
+      color: #fff;
+    }
+
+    header {
+      text-align: center;
+      padding: 40px 20px;
+      background-color: var(--gris);
+    }
+
+    header img {
+      max-width: 180px;
+    }
+
+    .btn-flotante {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: var(--dorado);
+      color: var(--negro);
+      padding: 12px 20px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      box-shadow: 0 0 10px var(--dorado);
+      z-index: 100;
+    }
+
+    nav {
+      background-color: var(--gris);
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      padding: 15px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      color: var(--dorado);
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav a:hover {
+      color: #fff;
+    }
+
+    section {
+      padding: 40px 20px;
+    }
+
+    .catalogo-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .producto {
+      background-color: #1a1a1a;
+      border: 1px solid var(--dorado);
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .imagen-principal img,
+    .galeria-oculta img {
+      height: 150px;
+      width: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      box-shadow: 0 0 5px #d4af37;
+      margin-right: 10px;
+      vertical-align: middle;
+    }
+
+    .galeria-oculta {
+      display: none;
+      margin-top: 20px;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"]:checked + label + .galeria-oculta {
+      display: flex;
+    }
+
+    .formulario input,
+    .formulario textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: none;
+      border-bottom: 2px solid var(--dorado);
+      background-color: transparent;
+      color: #fff;
+    }
+
+    .formulario button {
+      background-color: var(--dorado);
+      color: var(--negro);
+      padding: 12px 20px;
+      border: none;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: var(--gris);
+      font-size: 0.8em;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- INICIO -->
+  <header id="inicio">
+    <img src="LOGO/logo 3.png" alt="Logo de la empresa" />
+    <h1>EL MUNDO EXTERIOR AL ALCANCE DE TU MANO</h1>
+    <p>Nos enfocamos en importar artículos innovadores que mantengan una cadena rigurosa para alcanzar los más altos estándares de calidad. Con nuestra asesoría, somos la conexión entre fábricas de todo el mundo y tú.</p>
+  </header>
+
+  <a class="btn-flotante" href="#catalogo">Ir al Catálogo</a>
+
+  <!-- NAVEGACIÓN -->
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#catalogo">Catálogo</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <!-- CATÁLOGO -->
+  <section id="catalogo">
+    <h2>Catálogo de Productos</h2>
+    <div class="catalogo-grid">
+
+      <!-- BLOQUES DE PRODUCTOS DEL 1 AL 20 -->
+      <!-- Copia y personaliza cada bloque -->
+      <!-- Ejemplo con Producto 1 -->
+      <div class="producto">
+        <h3>NF8037 G-G-B</h3>
+        <input type="checkbox" id="toggle-1" />
+        <label for="toggle-1" class="imagen-principal">
+          <img src="NF8037.GGB.50/reloj-naviforce-deportivo-nf8037-goma-hombre-estuche.webp" alt="Imagen principal producto 1" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8037.GGB.50/IMG_9512.JPG" alt="Imagen secundaria 1" />
+          <img src="NF8037.GGB.50/IMG_9522.JPG" alt="Imagen adicional 1" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF8037 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+          MATERIALES: Correa de sílice ahumado / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9182 G-G</h3>
+        <input type="checkbox" id="toggle-2" />
+        <label for="toggle-2" class="imagen-principal">
+          <img src="NF9182.GG.55/NF9182-G-G.webp" alt="Imagen principal producto 2" />
+        </label>
+         <div class="galeria-oculta">
+          <img src="NF9182.GG.55/1746732961142.JPG" alt="Imagen secundaria 2" />
+          <img src="NF9182.GG.55/1746732961123.JPG" alt="Imagen adicional 2" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF9182 / 3 ATM Water Resistant / QUARTZ ANALOG+LCD DIGITAL / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8071 G-G-G</h3>
+        <input type="checkbox" id="toggle-3" />
+        <label for="toggle-3" class="imagen-principal">
+          <img src="NF8071.GGG.55/NF8071-allwatchcolors.PNG" alt="Imagen principal producto 3" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8071.GGG.55/1746732961622.JPG" alt="Imagen secundaria 3" />
+          <img src="NF8071.GGG.55/1746732961643.JPG" alt="Imagen adicional 3" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8071 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8026 G-B-E</h3>
+        <input type="checkbox" id="toggle-4" />
+        <label for="toggle-4" class="imagen-principal">
+          <img src="NF8026.GBE.55/H1d9fccfd96f345368d815c98dac4ce37G.jpg_350x350.avif" alt="Imagen principal producto 4" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8026.GBE.55/1746732961413.JPG" alt="Imagen secundaria 4" />
+          <img src="NF8026.GBE.55/1746732961545.JPG" alt="Imagen adicional 4" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8026 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8042 G-G-G</h3>
+        <input type="checkbox" id="toggle-5" />
+        <label for="toggle-5" class="imagen-principal">
+          <img src="NF8042.GGG.55/H3408a478ff6b47e89b2d1548c5896655p.jpg_720x720q50.avif" alt="Imagen principal producto 5" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8042.GGG.55/1747188081307.JPG" alt="Imagen secundaria 5" />
+          <img src="NF8042.GGG.55/1747188081664.JPG" alt="Imagen adicional 5" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8042 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8042 S-W-G</h3>
+        <input type="checkbox" id="toggle-6" />
+        <label for="toggle-6" class="imagen-principal">
+          <img src="NF8042.SWG.50/IMG_7102.jpg" alt="Imagen principal producto 6" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8042.SWG.50/1747188081524.JPG" alt="Imagen secundaria 6" />
+          <img src="NF8042.SWG.50/1747188081484.JPG" alt="Imagen adicional 6" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF8042 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8046 G-GN-G</h3>
+        <input type="checkbox" id="toggle-7" />
+        <label for="toggle-7" class="imagen-principal">
+          <img src="NF8046.GGNG.55/NAVIFORCE-8046-GGNG-Golden-Big-Dial-Quartz-Watch-for-Men-Wrist-Watch-Stainless-Steel-Strap-Waterproof-Gold-Clock-Custom-Logo-OEM.avif" alt="Imagen principal producto 7" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8046.GGNG.55/1747188081270.JPG" alt="Imagen secundaria 7" />
+          <img src="NF8046.GGNG.55/1747188081283.JPG" alt="Imagen adicional 7" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8046 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8049 S-G-G</h3>
+        <input type="checkbox" id="toggle-8" />
+        <label for="toggle-8" class="imagen-principal">
+          <img src="NF8049.SGG.55/IMG_1712.jpg" alt="Imagen principal producto 8" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8049.SGG.55/1747188081320.JPG" alt="Imagen secundaria 8" />
+          <img src="NF8049.SGG.55/1747188081702.JPG" alt="Imagen adicional 8" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8049 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8066 B-B-B</h3>
+        <input type="checkbox" id="toggle-9" />
+        <label for="toggle-9" class="imagen-principal">
+          <img src="NF8066.BBB.55/IMG_6820.jpg" alt="Imagen principal producto 9" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8066.BBB.55/1747188081295.JPG" alt="Imagen secundaria 9" />
+          <img src="NF8066.BBB.55/1747188081559.JPG" alt="Imagen adicional 9" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8066 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8066 G-G-G</h3>
+        <input type="checkbox" id="toggle-10" />
+        <label for="toggle-10" class="imagen-principal">
+          <img src="NF8066.GGG.55/Sc3625aa7c7bf41b4882dd3691cd5ee19i.avif" alt="Imagen principal producto 10" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8066.GGG.55/1746732961436.JPG" alt="Imagen secundaria 10" />
+          <img src="NF8066.GGG.55/1746732961466.JPG" alt="Imagen adicional 10" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8066 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8066 S-B-S</h3>
+        <input type="checkbox" id="toggle-11" />
+        <label for="toggle-11" class="imagen-principal">
+          <img src="NF8066.SBS.55/IMG_6791.jpg" alt="Imagen principal producto 11" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8066.SBS.55/1746732961326.JPG" alt="Imagen secundaria 11" />
+          <img src="NF8066.SBS.55/1746732961683.JPG" alt="Imagen adicional 11" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8066 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF8071 S-W-S</h3>
+        <input type="checkbox" id="toggle-12" />
+        <label for="toggle-12" class="imagen-principal">
+          <img src="NF8071.SWS.50/NF8071-allwatchcolors.PNG" alt="Imagen principal producto 12" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF8071.SWS.50/1746732961211.JPG" alt="Imagen secundaria 12" />
+          <img src="NF8071.SWS.50/1746732961303.JPG" alt="Imagen adicional 12" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF8071 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9038 S-B</h3>
+        <input type="checkbox" id="toggle-13" />
+        <label for="toggle-13" class="imagen-principal">
+          <img src="NF9038.SB.50/nf9038-s-b-naviforce-watch-men-black-dial-metal-silver-strap-quartz-battery-analog-water-resistant-30m-for-dream.jpg" alt="Imagen principal producto 13" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF9038.SB.50/1746732961600.JPG" alt="Imagen secundaria 13" />
+          <img src="NF9038.SB.50/1746732961702.JPG" alt="Imagen adicional 13" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF9038 / 3 ATM Water Resistant / QUARTZ CALENDAR / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9038 S-W</h3>
+        <input type="checkbox" id="toggle-14" />
+        <label for="toggle-14" class="imagen-principal">
+          <img src="NF9038.SW.50/NF9038_SW_grande.webp" alt="Imagen principal producto 14" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF9038.SW.50/1746732961282.JPG" alt="Imagen secundaria 14" />
+          <img src="NF9038.SW.50/1746732961658.JPG" alt="Imagen adicional 14" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF9038 / 3 ATM Water Resistant / QUARTZ CALENDAR / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9153L G-BL-BN</h3>
+        <input type="checkbox" id="toggle-15" />
+        <label for="toggle-15" class="imagen-principal">
+          <img src="NF9153L.GBL.BN.50/nf9153l-g-b-l-bn-naviforce-watch-men-black-dial-leather-light-brown-strap-quartz-battery-digital-analog-for-dream.jpg" alt="Imagen principal producto 15" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF9153L.GBL.BN.50/1747188081600.JPG" alt="Imagen secundaria 15" />
+          <img src="NF9153L.GBL.BN.50/1747188081622.JPG" alt="Imagen adicional 15" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF9153L / 3 ATM Water Resistant / QUARTZ CALENDAR + LCD DIGITAL / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de cuero genuino / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9153S G-CE</h3>
+        <input type="checkbox" id="toggle-16" />
+        <label for="toggle-16" class="imagen-principal">
+          <img src="NF9153S.GCE.55/DSC_8701-1.jpg" alt="Imagen principal producto 16" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF9153S.GCE.55/1747188081252.JPG" alt="Imagen secundaria 16" />
+          <img src="NF9153S.GCE.55/1747188081401.JPG" alt="Imagen adicional 16" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF9153S / 3 ATM Water Resistant / QUARTZ ANALOG + LCD DIGITAL / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9172S G-CE-G</h3>
+        <input type="checkbox" id="toggle-17" />
+        <label for="toggle-17" class="imagen-principal">
+          <img src="NF9172S.GCEG.55/51msALt3JaL.jpg" alt="Imagen principal producto 17" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF9172S.GCEG.55/1746732961248.JPG" alt="Imagen secundaria 17" />
+          <img src="NF9172S.GCEG.55/1746732961502.JPG" alt="Imagen adicional 17" />
+        </div>
+        <p>Precio: $55.00</p>
+        <p>NAVIFORCE NF9172S / 3 ATM Water Resistant / QUARTZ ANALOG + LCD DIGITAL / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9207 S-G-B</h3>
+        <input type="checkbox" id="toggle-18" />
+        <label for="toggle-18" class="imagen-principal">
+          <img src="NF9207.SGB.50/nf9207-s-g-b-naviforce-watch-men-black-gold-dial-stainless-steel-metal-silver-strap-quartz-battery-digital-analog-three-hand-for-dream.jpg" alt="Imagen principal producto 18" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF9207.SGB.50/1746732961229.JPG" alt="Imagen secundaria 18" />
+          <img src="NF9207.SGB.50/1746732961364.JPG" alt="Imagen adicional 18" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF9207 / 3 ATM Water Resistant / QUARTZ ANALOG + LCD DIGITAL / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9227 S-W-S</h3>
+        <input type="checkbox" id="toggle-19" />
+        <label for="toggle-19" class="imagen-principal">
+          <img src="NF9227.SWS.50/IMG_8181.jpg" alt="Imagen principal producto 19" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF9227.SWS.50/1747188081506.JPG" alt="Imagen secundaria 19" />
+          <img src="NF9227.SWS.50/1747188081721.JPG" alt="Imagen adicional 19" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF9227 / 3 ATM Water Resistant / QUARTZ CHRONOGRAPH / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <div class="producto">
+        <h3>NF9231 S-W-G</h3>
+        <input type="checkbox" id="toggle-20" />
+        <label for="toggle-20" class="imagen-principal">
+          <img src="NF9231.SWG.50/IMG_0954.jpg" alt="Imagen principal producto 20" />
+        </label>
+        <div class="galeria-oculta">
+          <img src="NF9231.SWG.50/1747188081751.JPG" alt="Imagen secundaria 20" />
+          <img src="NF9231.SWG.50/1747188081362.JPG" alt="Imagen adicional 20" />
+        </div>
+        <p>Precio: $50.00</p>
+        <p>NAVIFORCE NF8066 / 3 ATM Water Resistant / QUARTZ MULTI-FUNCTION / SEIKO INSTRUMER INC.</p>
+        MATERIALES: Correa de acero inoxidable / Aleación de zinc / Cristal mineral endurecido.</p>
+      </div>
+      <!-- Repite el bloque anterior hasta el producto 20 -->
+      <!-- Cambia los ID, nombres, imágenes y texto según tu contenido -->
+
+    </div>
+  </section>
+
+  <!-- SERVICIOS -->
+  <section id="servicios">
+    <h2>Otros Servicios</h2>
+    <p>Asesoría completa sobre compra, logística y distribución de cualquier producto, 
+      desde la ubicación mas favorable para la rentabilidad de tu economía, hasta su punto final.</p>
+  </section>
+
+ <!-- CONTACTO -->
+<section id="contacto">
+  <h2>Contáctanos</h2>
+  <form class="formulario" action="https://formsubmit.co/jesahelordenana@gmail.com" method="POST">
+    <input type="hidden" name="_cc" value="ttony0153@gmail.com">
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_next" value="https://jesahel30.github.io/Jesahel30/gracias.html">
+
+    <input type="text" name="nombre" placeholder="Tu nombre" required />
+    <input type="email" name="correo" placeholder="Tu correo electrónico" required />
+    <input type="tel" name="telefono" placeholder="Tu número de teléfono" />
+    <textarea name="mensaje" rows="5" placeholder="Tu mensaje" required></textarea>
+    <button type="submit">Enviar</button>
+  </form>
+
+  <div>
+    <p>Para realizar el pedido, envía tu modelo favorito a:</p>
+    <ul>
+      <li><a href="https://wa.me/593998872536" target="_blank">WhatsApp</a></li>
+    </ul>
+  </div>
+</section>
+
+  <footer>
+    &copy; 2025 Tu Empresa – Todos los derechos reservados
+  </footer>
+
+</body>
+</html>
